@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  php-grpc:
+    build: .
+    ports:
+      - "50051:50051"
+    volumes:
+      - .:/app
+#    command: php server.php
+    command: tail -F anything
