@@ -2,17 +2,17 @@
     "packages": [
         {
             "name": "google/protobuf",
-            "version": "v4.30.2",
-            "version_normalized": "4.30.2.0",
+            "version": "v3.25.7",
+            "version_normalized": "3.25.7.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/protocolbuffers/protobuf-php.git",
-                "reference": "a4c4d8565b40b9f76debc9dfeb221412eacb8ced"
+                "reference": "6901ac6aed67882732a47d877d4dbd6189cbdcf2"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/protocolbuffers/protobuf-php/zipball/a4c4d8565b40b9f76debc9dfeb221412eacb8ced",
-                "reference": "a4c4d8565b40b9f76debc9dfeb221412eacb8ced",
+                "url": "https://api.github.com/repos/protocolbuffers/protobuf-php/zipball/6901ac6aed67882732a47d877d4dbd6189cbdcf2",
+                "reference": "6901ac6aed67882732a47d877d4dbd6189cbdcf2",
                 "shasum": ""
             },
             "require": {
@@ -24,7 +24,7 @@
             "suggest": {
                 "ext-bcmath": "Need to support JSON deserialization"
             },
-            "time": "2025-03-26T18:01:50+00:00",
+            "time": "2025-04-23T22:37:01+00:00",
             "type": "library",
             "installation-source": "dist",
             "autoload": {
@@ -43,7 +43,7 @@
                 "proto"
             ],
             "support": {
-                "source": "https://github.com/protocolbuffers/protobuf-php/tree/v4.30.2"
+                "source": "https://github.com/protocolbuffers/protobuf-php/tree/v3.25.7"
             },
             "install-path": "../google/protobuf"
         },

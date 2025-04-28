@@ -4,18 +4,35 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInit265f2af01cc86615248425a3c7abe736
+class ComposerStaticInit6129ff2965c0011f72bcde139ae548e6
 {
     public static $prefixLengthsPsr4 = array (
+        'R' => 
+        array (
+            'Routeguide\\' => 11,
+        ),
+        'H' => 
+        array (
+            'Helloworld\\' => 11,
+        ),
         'G' => 
         array (
             'Grpc\\' => 5,
             'Google\\Protobuf\\' => 16,
             'GPBMetadata\\Google\\Protobuf\\' => 28,
+            'GPBMetadata\\' => 12,
         ),
     );
 
     public static $prefixDirsPsr4 = array (
+        'Routeguide\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/route_guide/Routeguide',
+        ),
+        'Helloworld\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/Helloworld',
+        ),
         'Grpc\\' => 
         array (
             0 => __DIR__ . '/..' . '/grpc/grpc/src/lib',
@@ -28,6 +45,11 @@ class ComposerStaticInit265f2af01cc86615248425a3c7abe736
         array (
             0 => __DIR__ . '/..' . '/google/protobuf/src/GPBMetadata/Google/Protobuf',
         ),
+        'GPBMetadata\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/GPBMetadata',
+            1 => __DIR__ . '/../..' . '/route_guide/GPBMetadata',
+        ),
     );
 
     public static $classMap = array (
@@ -37,9 +59,9 @@ class ComposerStaticInit265f2af01cc86615248425a3c7abe736
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInit265f2af01cc86615248425a3c7abe736::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInit265f2af01cc86615248425a3c7abe736::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInit265f2af01cc86615248425a3c7abe736::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInit6129ff2965c0011f72bcde139ae548e6::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInit6129ff2965c0011f72bcde139ae548e6::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInit6129ff2965c0011f72bcde139ae548e6::$classMap;
 
         }, null, ClassLoader::class);
     }
