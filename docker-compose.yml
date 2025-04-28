@@ -7,5 +7,4 @@ services:
       - "50051:50051"
     volumes:
       - .:/app
-#    command: php server.php
-    command: tail -F anything
+    command: php greeter_server.php
